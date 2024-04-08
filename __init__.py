@@ -1,2 +1,2 @@
-from .text_generator import *
+from .TextGenerator import *
 from .objects import *
