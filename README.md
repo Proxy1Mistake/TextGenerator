@@ -10,7 +10,7 @@
 ###### example/Пример :
 
 ```py3
-from textgenerator import TextGenerator
+from TextGenerator import TextGenerator
 style = TextGenerator.style()
 print(TextGenerator.generate_text(text = 'i_am_proxy_mistake', style = style.old_italic))
 ```
