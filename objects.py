@@ -1,0 +1,38 @@
+from pydantic import BaseModel
+
+class Style(BaseModel):
+    ancient: str
+    aesthetic: str
+    arabian_night: str
+    asian: str
+    black_bracket: str
+    bold: str
+    bold_gothic: str
+    bold_italic: str
+    bold_script: str
+    bubble: str
+    chinese: str
+    currency: str
+    double_line: str
+    eastern: str
+    efiopiya: str
+    emoji: str
+    fairy_tale: str
+    glyphs: str
+    gothic: str
+    greek: str
+    indian: str
+    italic: str
+    kanadskiy_slog: str
+    monospace: str
+    old_italic: str
+    runy: str
+    script: str
+    smooth_curve: str
+    square: str
+    squiggle: str
+    strike: str
+    tilde_strike: str
+    underline: str
+    upsidedown: str
+    white_bracket: str
