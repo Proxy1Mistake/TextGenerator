@@ -2,7 +2,7 @@
   <img src = "https://textgenerator.ru/assets/favicons/android-chrome-192x192.png" align = "center"></img>
 </h2>
 <h2 align = "center">TextGenerator</h2>
-<details align = "center">
+<details>
 <summary>reveal me : </summary></summary>
 
 ###### Эта библиотека предназначена для получения текста определенного шрифта. Происходит это с помощью запросов на сайт : https://textgenerator.ru/
@@ -16,7 +16,7 @@ print(TextGenerator.generate_text(text = 'i_am_proxy_mistake', style = style.old
 ```
 </details>
 
-<details align = "center">
+<details>
 <summary>ᴍʏ sᴏᴄɪᴀʟ ɴᴇᴛᴏᴡʀᴋ : </summary>
 <br>
 <a href = "https://t.me/Proxy1Mistake" target="_blank">
