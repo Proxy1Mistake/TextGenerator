@@ -2,13 +2,17 @@ from requests import post
 from .objects import *
 
 class TextGenerator:
-    _post = post
     _headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
     }
 
     @classmethod
     def style(cls) -> Style:
+        """
+        Get all possible styles.
+
+        :return: Style
+        """
         style_case = {
             'aesthetic': 'aesthetic',
             'ancient': 'ancient',
@@ -52,7 +56,20 @@ class TextGenerator:
         return Style(**style_case)
 
     @classmethod
-    def generate_text(cls, text: str, style: str):
-        return cls._post(url = f'https://textgenerator.ru/font/{style}/ajax',
-                                data = {'text': text},
-                                headers = cls._headers).text
+    def generate_text(cls, text: str, style: str) -> str:
+        """
+        Using this method, you can generate text in one form or another.
+
+        :param text: What kind of text do you want to receive in a certain form?
+
+        :param style: Def style can help you)
+
+        :return: response text
+        """
+        return post(
+            url = f'https://textgenerator.ru/font/{style}/ajax',
+            data = {
+                'text': text
+            },
+            headers = cls._headers
+        ).text
